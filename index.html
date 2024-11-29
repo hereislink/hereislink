@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的简历 - Apple风格</title>
+    <title>个人简历</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="logo">简历</div>
-        <div class="nav-links">
-            <a href="#info">个人信息</a>
-            <a href="#education">教育经历</a>
-            <a href="#experience">实践经历</a>
-            <a href="#skills">个人技能</a>
-        </div>
-    </nav>
+    <div class="container">
+        <!-- 侧边栏个人信息 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar">YX</div>
+                <h1>你的名字</h1>
+                <p class="title">期望职位</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>联系方式</h2>
+                <div class="info-item">📞 XXX-XXXX-XXXX</div>
+                <div class="info-item">📧 example@email.com</div>
+                <div class="info-item">📍 XX省XX市</div>
+                <div class="info-item">🎂 XXXX年XX月</div>
+            </div>
+        </aside>
 
-    <header class="hero">
-        <h1 class="gradient-text">你的名字</h1>
-        <p class="subtitle">求职意向：期望职位</p>
-    </header>
-
-    <section id="info" class="glass-container">
-        <h2><i class="fas fa-user"></i> 个人信息</h2>
-        <div class="info-grid">
-            <div class="info-item">
-                <i class="fas fa-birthday-cake"></i>
-                <span>出生年月：XXXX年XX月</span>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <span>联系电话：XXX-XXXX-XXXX</span>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <span>电子邮箱：example@email.com</span>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>所在地：XX省XX市</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" class="glass-container">
-        <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="date">2020-2024</div>
-                <div class="content">
-                    <h3>XX大学</h3>
-                    <p>专业：XXXXXX</p>
-                    <p>学历：本科/硕士</p>
-                    <p>主修课程：XXXX、XXXX、XXXX</p>
+        <!-- 主要内容区 -->
+        <main class="main-content">
+            <!-- 教育经历 -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>教育经历</h2>
+                    <div class="section-line"></div>
                 </div>
-            </div>
-        </div>
-    </section>
+                
+                <div class="education-card">
+                    <div class="edu-header">
+                        <h3>XX大学</h3>
+                        <span class="year">2020-2024</span>
+                    </div>
+                    <div class="edu-details">
+                        <p class="major">专业：XXXXXX</p>
+                        <p class="degree">学历：本科/硕士</p>
+                        <p class="courses">主修课程：XXXX、XXXX、XXXX</p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="experience" class="glass-container">
-        <h2><i class="fas fa-briefcase"></i> 实践经历</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="date">2023.06-2023.09</div>
-                <div class="content">
-                    <h3>公司/项目名称</h3>
-                    <p class="role">职位/角色</p>
-                    <ul class="experience-list">
+            <!-- 实践经历 -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>实践经历</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>公司/项目名称</h3>
+                            <p class="role">职位/角色</p>
+                        </div>
+                        <span class="year">2023.06-2023.09</span>
+                    </div>
+                    <ul class="exp-details">
                         <li>具体工作内容或项目描述1</li>
                         <li>具体工作内容或项目描述2</li>
                         <li>具体工作内容或项目描述3</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="skills" class="glass-container">
-        <h2><i class="fas fa-code"></i> 个人技能</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>专业技能</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <span>技能1</span>
-                        <div class="skill-bar" data-level="90%"></div>
+            <!-- 技能特长 -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>技能特长</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-name">技能1</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <span>技能2</span>
-                        <div class="skill-bar" data-level="85%"></div>
+                    <div class="skill-card">
+                        <div class="skill-name">技能2</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
                     </div>
                     <!-- 添加更多技能 -->
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
