@@ -1,74 +1,101 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>林可欣 - 个人主页</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>我的简历 - Apple风格</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>林可欣</h1>
-        <p>求职意向：白日梦想家</p>
+    <nav class="nav-bar">
+        <div class="logo">简历</div>
+        <div class="nav-links">
+            <a href="#info">个人信息</a>
+            <a href="#education">教育经历</a>
+            <a href="#experience">实践经历</a>
+            <a href="#skills">个人技能</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="gradient-text">你的名字</h1>
+        <p class="subtitle">求职意向：期望职位</p>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>关于我</h2>
-            <p>你好，我是人。</p>
-        </section>
+    <section id="info" class="glass-container">
+        <h2><i class="fas fa-user"></i> 个人信息</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-birthday-cake"></i>
+                <span>出生年月：XXXX年XX月</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>联系电话：XXX-XXXX-XXXX</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>电子邮箱：example@email.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>所在地：XX省XX市</span>
+            </div>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>教育经历</h2>
-            <ul>
-                <li>
-                    <h3>广东财经大学</h3>
-                    <p>学士 - 应用心理学</p>
-                    <p>2019.9-2023.6</p>
-                </li>
-                    <h3>澳门城市大学</h3>
-                    <p>硕士 - 应用心理学</p>
-                    <p>2023.9-2025.6</p>
-                </li>
-        </section>
+    <section id="education" class="glass-container">
+        <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2020-2024</div>
+                <div class="content">
+                    <h3>XX大学</h3>
+                    <p>专业：XXXXXX</p>
+                    <p>学历：本科/硕士</p>
+                    <p>主修课程：XXXX、XXXX、XXXX</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2>实践经历</h2>
-            <ul>
-                <li>
+    <section id="experience" class="glass-container">
+        <h2><i class="fas fa-briefcase"></i> 实践经历</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2023.06-2023.09</div>
+                <div class="content">
                     <h3>公司/项目名称</h3>
-                    <p>职位/角色</p>
-                    <p>起止时间</p>
-                    <ul>
-                        <li>描述您的职责和成就</li>
-                        <li>突出显示您的贡献和影响</li>
+                    <p class="role">职位/角色</p>
+                    <ul class="experience-list">
+                        <li>具体工作内容或项目描述1</li>
+                        <li>具体工作内容或项目描述2</li>
+                        <li>具体工作内容或项目描述3</li>
                     </ul>
-                </li>
-                <!-- 可以添加更多实践经历 -->
-            </ul>
-        </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>个人技能</h2>
-            <ul>
-                <li>技能1</li>
-                <li>技能2</li>
-                <li>技能3</li>
-                <!-- 添加更多技能 -->
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>联系方式</h2>
-            <p>邮箱：13430000989@163.com</p>
-            <p>电话：+86 123 4567 8900</p>
-            <p>LinkedIn：<a href="https://www.linkedin.com/in/yourprofile">您的LinkedIn个人主页</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 您的姓名. 保留所有权利。</p>
-    </footer>
+    <section id="skills" class="glass-container">
+        <h2><i class="fas fa-code"></i> 个人技能</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>专业技能</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>技能1</span>
+                        <div class="skill-bar" data-level="90%"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>技能2</span>
+                        <div class="skill-bar" data-level="85%"></div>
+                    </div>
+                    <!-- 添加更多技能 -->
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
