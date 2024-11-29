@@ -184,33 +184,39 @@
             left: 0;
         }
 
-        /* 技能卡片 */
+        /* 技能部分的新样式 */
         .skills-grid {
             display: grid;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
-        .skill-card {
-            padding: 1rem;
+        .skill-category {
+            margin-bottom: 1.5rem;
         }
 
-        .skill-name {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
         }
 
-        .skill-bar {
-            height: 8px;
-            background: #eee;
-            border-radius: 4px;
-            overflow: hidden;
+        .skill-list {
+            list-style: none;
         }
 
-        .skill-progress {
-            height: 100%;
-            background: var(--gradient);
-            border-radius: 4px;
-            transition: width 1s ease-in-out;
+        .skill-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.2rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
         /* 响应式设计 */
@@ -324,19 +330,31 @@
                 </div>
                 
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-name">技能1</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
+                    <div class="skill-category">
+                        <h3>专业技能</h3>
+                        <ul class="skill-list">
+                            <li>熟练掌握 Java 编程语言，了解 JVM 底层原理</li>
+                            <li>熟悉 Spring、Spring Boot、MyBatis 等主流框架</li>
+                            <li>熟悉 MySQL 数据库，了解数据库优化原理</li>
+                        </ul>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-name">技能2</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                    
+                    <div class="skill-category">
+                        <h3>开发工具</h3>
+                        <ul class="skill-list">
+                            <li>熟练使用 IDEA、Eclipse 等开发工具</li>
+                            <li>熟悉 Git 版本控制工具</li>
+                            <li>熟悉 Linux 常用命令</li>
+                        </ul>
                     </div>
-                    <!-- 添加更多技能 -->
+
+                    <div class="skill-category">
+                        <h3>语言能力</h3>
+                        <ul class="skill-list">
+                            <li>英语 CET-6，可流畅阅读英文技术文档</li>
+                            <li>良好的文档写作能力</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </main>
